@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoção de Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Promoção de Loja</h1>
+    <div class="container">
+        <label for="peca">Escolha a peça:</label>
+        <select id="peca">
+            <option value="camisa">Camisa (20% de desconto)</option>
+            <option value="bermuda">Bermuda (10% de desconto)</option>
+            <option value="calca">Calça (15% de desconto)</option>
+        </select>
+        <br><br>
+        <label for="preco">Preço da peça (R$):</label>
+        <input type="number" id="preco" placeholder="Digite o preço" min="0" step="0.01">
+        <br><br>
+        <button onclick="calcularDesconto()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
